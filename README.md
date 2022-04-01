@@ -1,15 +1,15 @@
 # Bayesian classifier
 
-Naive Bayes Classifier developed with numpy. This classifier has been used in several projects to classify human tactile data. Notwithstanding it presents really good results with tactile data, it can also be used for other tasks that try to distinguish different time series.
+Naive Bayes Classifier developed with numpy. This classifier has been used in several projects to classify human tactile data. Notwithstanding that it presents excellent results with tactile data, it can also be used for other tasks to distinguish different time series.
 
 ## Dataset
 
-Stimuli used in this experiment were modelled with the 3D extension of the Superformula (Gielis, 2003), generating a family of smoothly varying 3D shapes that were later printed. In order to capture the human haptic object manipulation, we attached twenty-four copper pads equally distributed to the surface of each object. Each pad is connected to an electronic board placed inside each object, acting as a capacitive sensor.
+Stimuli used in this experiment were modeled with the 3D extension of the Superformula (Gielis, 2003), generating a family of smoothly varying 3D shapes that were later printed. In order to capture the human haptic object manipulation, we attached twenty-four copper pads equally distributed to the surface of each object. Each pad is connected to an electronic board placed inside each object, acting as a capacitive sensor.
 |Superformula 3D shapes|Haptic capture system|
 |:---------------------:|:---------------------:|
 |![figures](figures.png)|![sensors](sensors.png)|
 
-The electronic board placed inside the object collects data from all the sensors (touched or not touched) with a sampling frequency of 40 Hz. The sampling frequency is 40Hz. For every sample, an array of 24 elements, each one being 1 (not touched) or 0 (touched), is received. To train our haptic system, we collected an independent dataset containing 20 minutes (15 for training and 5 for testing) of human haptic exploration per object. To obtain a com- plete exploration of the objects and to standardize haptic exploratory procesure over time, we instructed a participant to perform a task. (see [Artificial haptic recognition through human manipulation of objects](https://doi.org/10.32470/CCN.2019.1240-0) for further details)
+The electronic board placed inside the object collects data from all the sensors (touched or not touched) with a sampling frequency of 40 Hz. The sampling frequency is 40Hz. An array of 24 elements for every sample, each one being 1 (not touched) or 0 (touched), is received. Each array corresponds to one line in the text files stored in ```datasets```. We collected an independent dataset containing 20 minutes (15 for training and 5 for testing) of human haptic exploration per object. To obtain a complete exploration of the objects and to standardize haptic exploratory procedure over time, we instructed a participant to perform a task. (see [Artificial haptic recognition through human manipulation of objects](https://doi.org/10.32470/CCN.2019.1240-0) for further details)
 
 Different publications rely on this model:
 
