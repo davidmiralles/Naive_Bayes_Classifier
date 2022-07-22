@@ -1,4 +1,4 @@
-# Bayesian classifier
+# Naive Bayes classifier
 
 Naive Bayes Classifier developed with numpy. This classifier has been used in several projects to classify human tactile data. Notwithstanding that it presents excellent results with tactile data, it can also be used for other tasks to distinguish different time series.
 
